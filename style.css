@@ -1,0 +1,84 @@
+body {
+    background-image: url('background/desk.jpg');
+    background-size:cover;
+}
+body form {
+    margin:5%;
+}
+body input,textarea {
+    width:32%;
+}
+#message {
+   display:none;
+   width: 50%;
+   background: #f1f1f1;
+   padding: 2%;
+   margin-left:35.5%;
+}
+.validpsw {
+    color:green;
+}
+.validpsw:before {
+    content:"✔";
+    margin-right: 2%;
+}
+.invalidpsw {
+    color:red;
+}
+.invalidpsw:before {
+    content:"❌";
+    margin-right: 2%;
+}
+#alertDone{
+    display: none;
+    width: 30%;
+    position: absolute !important;
+    top: 4%;
+    right: 3%;
+}
+
+#nameAlert {
+    display:none;
+    position: absolute !important;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    top: 6%;
+    left: 8%;
+    width: 25%;
+    margin-top: 2%;
+    color: red;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+#adressAlert{
+    display:none;
+    position: absolute !important;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    top: 23%;
+    right: 8%;
+    width: 25%;
+    margin-top: 2%;
+    color: red;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+#emailAlert {
+    display:none;
+    position: absolute !important;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    top: 43%;
+    left: 8%;
+    width: 25%;
+    margin-top: 2%;
+    color: red;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}

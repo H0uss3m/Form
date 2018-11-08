@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet " href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    </head>
+
+    <body class="container text-center">
+                            <form name="myForm" action="#"  onsubmit="return validForm()">
+                                    <h1>Full Name :</h1>
+                                    <input type="text" id="fullName" placeholder="Mickeal Jackson" onblur="return validName()" ><br>
+                                    <div class="alert alert-warning" id="nameAlert" role="alert">
+                                    ⛔️ <strong>Error !! </strong>Please Enter the right format for the <strong>
+                                        Full Name</strong> field (Firstname and Lastname should have a space between)
+                                    </div>
+                                    <h1>Adress :</h1>
+                                    <input type="text" id="adress" onblur="return validAdress()" placeholder="445 Mount Eden Road, Mount Eden, Auckland." ><br><br>
+                                    <div class="alert alert-warning" id="adressAlert" role="alert">
+                                            ⛔️ <strong>Error !! </strong>Please Enter the right format for the <strong>Adress</strong> 
+                                            field (It should contains at least 8 characters) 
+                                    </div><br>
+                                    <h1>Adress email :</h1> 
+                                    <input type="email" id="email" onblur="return validEmail()" placeholder="abc@gmail.com" ><br>
+                                    <div  class="alert alert-warning" id="emailAlert" role="alert">
+                                            ⛔️ <strong>Error !! </strong>Please Enter the right format for the <strong>EmailAdress</strong> field 
+                                    </div>
+                                    <h1>Password</h1><br>
+                                    <input type="password" id="password"> <br>
+                                    
+                                    <div id="message" class="card bg-light mb-3" style="max-width: 18rem;">
+                                        <div class="card-header">Password must contain the following:</div>
+                                        <div class="card-body">
+                                                <p id="letter" class="invalidpsw card-text">A <b>lowercase</b> letter</p>
+                                                <p id="capital" class="invalidpsw card-text">A <b>capital </b> letter</p>
+                                                <p id="number" class="invalidpsw card-text">A <b>number</b></p>
+                                                <p id="length" class="invalidpsw card-text">Maximum <b>8 characters</b></p>
+                                        </div>
+                                      </div>
+                                    <h1>Comment :</h1>
+                                    <textarea rows="6" cols="48" placeholder="leave a comment here ..." ></textarea><br><br>
+                                    <button type="submit" class="btn btn-danger">Submit</button> <br><br>
+                                    <div class="alert alert-success" id="alertDone" role="alert">
+                                        <h4 class="alert-heading">✔ Well done!</h4>
+                                        <p>Aww yeah, you successfully fill this form correctly, We will check this as soon as possible and we will send you a confiramtion email !!!  So stay tuned </p>
+                                        <hr>
+                                        <p class="mb-0">Thank you for your visit and See you soon !! 😘 </p>
+                                    </div>
+                                    <button type="reset" onclick="return Reset()"class="btn btn-danger"> Reset</button>
+                                </form> 
+                  <script src="myScript.js"></script>       
+    </body>
+</html>
